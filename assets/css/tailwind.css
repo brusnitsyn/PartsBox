@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-3xl tracking-tight;
+    }
+
+    h2 {
+        @apply text-2xl tracking-tight;
+    }
+
+    h3 {
+        @apply text-xl tracking-tight;
+    }
+
+    button {
+        @apply text-sm uppercase tracking-wider transition-all ease-out;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply py-3 px-4
+    }
+
+    .btn-accent {
+        @apply border border-accent-500 bg-accent-500 hover:bg-accent-600 text-white font-medium rounded-md hover:border-accent-900;
+    }
+}
+
+button {
+    -webkit-tap-highlight-color: transparent;
+}
