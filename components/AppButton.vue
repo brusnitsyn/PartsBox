@@ -1,9 +1,9 @@
 <template>
   <button
-    class=" "
+    class="select-none"
     :class="{
       'btn btn-accent': !type.length,
-      'p-2 rounded-md hover:bg-gray-100': type === 'icon',
+      'p-2 rounded-md hover:bg-gray-200/40': type === 'icon',
     }"
   >
     <slot />
